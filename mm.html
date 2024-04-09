@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Maison Margiela</title>
+    <style>
+      .image {
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+      }
+    </style>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+
+      <a class="home-link" href="index.html">Home</a>
+      <a href="yy.html">Yohji Yamamoto</a>
+      <a href="ERD.html">Enfants Riches Deprimes</a>
+      <a href="mm.html" class="active">Maison Margiela</a>
+      <a href="ro.html">Rick Owens</a>
+      <a href="bb.html">Balenciaga</a>
+      <a href="aboutMe.html">About Me</a>
+    </div>
+  </nav>
+    <div class="add-image-form">
+        <input type="text" id="newImageUrl" placeholder="Image URL">
+        <input type="text" id="newImageAlt" placeholder="Image Description">
+        <button type="button" id="addImageButton">Add Image</button>
+    </div>
+    <div id="main-container">
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        </div>
+    </div>
+    <div class="designer-history">
+      <h2>Maison Margiela</h2>
+      <p>Maison Margiela, founded by Belgian designer 
+        Martin Margiela in 1988, is a French luxury 
+        fashion house renowned for its unconventional 
+        designs that deconstruct traditional garment structures 
+        and challenge the norms of the fashion industry. The brand 
+        is known for its anonymity and collective approach to 
+        design, with Margiela himself famously shunning the 
+        spotlight. Maison Margiela's aesthetic is characterized 
+        by raw, unfinished details, oversized proportions, and the 
+        use of recycled materials, reflecting a deep commitment to 
+        conceptual fashion and craftsmanship. The iconic Tabi boot, 
+        with its split-toe design, is among the brand's most recognizable pieces. 
+        Maison Margiela has also been influential in popularizing the concept of 
+        "replica" garments, reproducing and reinterpreting vintage clothing 
+        and objects. Under the creative direction of John Galliano since 2014, 
+        the brand has infused its avant-garde roots with a new level of 
+        opulence and drama, while continuing to push the boundaries of traditional fashion.</p>
+    </div>
+
+    <script src="mm.js"></script>
+
+
+</body>
+</html>

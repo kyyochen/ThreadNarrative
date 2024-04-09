@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Runway Catalog</title>
+    <style>
+      .image {
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+      }
+    </style>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+
+      <a class="home-link" href="index.html">Home</a>
+      <a href="yy.html" class="active">Yohji Yamamoto</a>
+      <a href="ERD.html">Enfants Riches Deprimes</a>
+      <a href="mm.html">Maison Margiela</a>
+      <a href="ro.html">Rick Owens</a>
+      <a href="bb.html">Balenciaga</a>
+      <a href="aboutMe.html">About Me</a>
+    </div>
+  </nav>
+  <div class="add-image-form">
+      <input type="text" id="newImageUrl" placeholder="Image URL">
+      <input type="text" id="newImageAlt" placeholder="Image Description">
+      <button type="button" id="addImageButton">Add Image</button>
+  </div>
+    <div id="main-container">
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        </div>
+    </div>
+    <div class="designer-history">
+      <h2>Yohji Yamamoto</h2>
+      <p>Yohji Yamamoto is a revered Japanese fashion designer 
+        known for his avant-garde tailoring that incorporates 
+        Japanese design aesthetics with Western fashion elements. 
+        Since launching his namesake brand in Tokyo in 1972, Yamamoto 
+        has been celebrated for his mastery of drapery and the color black,
+         which he describes as "modest and arrogant at the same time." 
+         His designs often feature oversized silhouettes, asymmetrical 
+         cuts, and a strong emphasis on texture and movement, challenging 
+         conventional notions of beauty and fashion. Yamamoto's work is deeply 
+         personal, often reflecting his own philosophical musings on life, love, 
+         and death. His approach to fashion is both intellectual and artistic, 
+         earning him a dedicated following and a respected place in fashion history. 
+         Yamamoto's influence extends beyond his clothing lines, with significant 
+         contributions to the worlds of theater and film, further cementing his 
+         legacy as a multifaceted artist.</p>
+    </div>
+    <script src="yy.js"></script>
+
+
+
+</body>
+</html>
+
+
